@@ -1,0 +1,47 @@
+/* ==========================
+   LIGHT MODE
+========================== */
+
+body.light-mode{
+
+background:#f5f5f5;
+color:#111;
+
+}
+
+body.light-mode .navbar{
+
+background:
+rgba(255,255,255,0.7);
+
+}
+
+body.light-mode .card,
+body.light-mode .portfolio-item,
+body.light-mode .stats-grid div{
+
+background:
+rgba(255,255,255,0.8);
+
+color:#111;
+
+}
+
+body.light-mode footer{
+
+background:#eaeaea;
+color:#111;
+
+}
+
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark-mode{
+
+background:#050816;
+color:white;
+
+}
