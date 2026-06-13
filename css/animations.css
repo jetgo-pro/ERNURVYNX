@@ -1,0 +1,379 @@
+```css
+/* ===================================
+   FADE IN
+=================================== */
+
+.fade-in{
+opacity:0;
+transform:translateY(40px);
+animation:fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn{
+
+0%{
+opacity:0;
+transform:translateY(40px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+/* ===================================
+   SLIDE UP
+=================================== */
+
+.slide-up{
+opacity:0;
+transform:translateY(80px);
+animation:slideUp 1.2s ease forwards;
+}
+
+@keyframes slideUp{
+
+0%{
+opacity:0;
+transform:translateY(80px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+/* ===================================
+   SLIDE LEFT
+=================================== */
+
+.slide-left{
+opacity:0;
+transform:translateX(-60px);
+animation:slideLeft 1s ease forwards;
+}
+
+@keyframes slideLeft{
+
+0%{
+opacity:0;
+transform:translateX(-60px);
+}
+
+100%{
+opacity:1;
+transform:translateX(0);
+}
+
+}
+
+
+/* ===================================
+   SLIDE RIGHT
+=================================== */
+
+.slide-right{
+opacity:0;
+transform:translateX(60px);
+animation:slideRight 1s ease forwards;
+}
+
+@keyframes slideRight{
+
+0%{
+opacity:0;
+transform:translateX(60px);
+}
+
+100%{
+opacity:1;
+transform:translateX(0);
+}
+
+}
+
+
+/* ===================================
+   FLOATING LOGO
+=================================== */
+
+.floating{
+
+animation:floating 4s ease-in-out infinite;
+
+}
+
+@keyframes floating{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+
+/* ===================================
+   LOGO ROTATION
+=================================== */
+
+.rotate-logo{
+
+animation:rotateLogo 20s linear infinite;
+
+}
+
+@keyframes rotateLogo{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+
+/* ===================================
+   NEON PULSE
+=================================== */
+
+.neon-pulse{
+
+animation:neonPulse 2s infinite;
+
+}
+
+@keyframes neonPulse{
+
+0%{
+
+box-shadow:
+0 0 5px #00e5ff,
+0 0 10px #00e5ff,
+0 0 20px #00e5ff;
+
+}
+
+50%{
+
+box-shadow:
+0 0 15px #7c4dff,
+0 0 30px #7c4dff,
+0 0 60px #7c4dff;
+
+}
+
+100%{
+
+box-shadow:
+0 0 5px #00e5ff,
+0 0 10px #00e5ff,
+0 0 20px #00e5ff;
+
+}
+
+}
+
+
+/* ===================================
+   GLOW TEXT
+=================================== */
+
+.glow-text{
+
+animation:textGlow 3s infinite;
+
+}
+
+@keyframes textGlow{
+
+0%{
+
+text-shadow:
+0 0 10px #00e5ff,
+0 0 20px #00e5ff;
+
+}
+
+50%{
+
+text-shadow:
+0 0 20px #7c4dff,
+0 0 40px #7c4dff;
+
+}
+
+100%{
+
+text-shadow:
+0 0 10px #00e5ff,
+0 0 20px #00e5ff;
+
+}
+
+}
+
+
+/* ===================================
+   CARD HOVER
+=================================== */
+
+.card{
+
+transition:
+transform .4s ease,
+box-shadow .4s ease;
+
+}
+
+.card:hover{
+
+transform:
+translateY(-12px)
+scale(1.03);
+
+box-shadow:
+0 0 25px #00e5ff,
+0 0 40px rgba(124,77,255,.5);
+
+}
+
+
+/* ===================================
+   PORTFOLIO HOVER
+=================================== */
+
+.portfolio-item{
+
+transition:
+transform .4s ease,
+box-shadow .4s ease;
+
+}
+
+.portfolio-item:hover{
+
+transform:
+translateY(-10px)
+scale(1.03);
+
+box-shadow:
+0 0 20px #00e5ff;
+
+}
+
+
+/* ===================================
+   BUTTON GLOW
+=================================== */
+
+.btn{
+
+position:relative;
+overflow:hidden;
+
+}
+
+.btn::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-100%;
+
+width:100%;
+height:100%;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.3),
+transparent
+);
+
+transition:.8s;
+
+}
+
+.btn:hover::before{
+
+left:100%;
+
+}
+
+
+/* ===================================
+   FOOTER GLOW
+=================================== */
+
+footer{
+
+position:relative;
+
+}
+
+footer::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:2px;
+
+background:
+linear-gradient(
+90deg,
+#00e5ff,
+#7c4dff,
+#d4af37
+);
+
+}
+
+
+/* ===================================
+   SCROLL REVEAL
+=================================== */
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:
+all 1s ease;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+```
