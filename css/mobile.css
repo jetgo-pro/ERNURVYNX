@@ -1,0 +1,233 @@
+```css
+/* ==========================
+   TABLET
+========================== */
+
+@media screen and (max-width:1024px){
+
+.hero{
+padding-top:120px;
+}
+
+.glow-title{
+font-size:65px;
+}
+
+.hero-logo{
+width:180px;
+}
+
+section{
+padding:90px 7%;
+}
+
+section h2{
+font-size:42px;
+}
+
+.video-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media screen and (max-width:768px){
+
+.navbar{
+padding:15px 5%;
+}
+
+.logo{
+width:45px;
+height:45px;
+}
+
+.logo-area span{
+font-size:18px;
+}
+
+.nav-buttons{
+gap:10px;
+}
+
+#language-switcher{
+font-size:12px;
+padding:8px;
+}
+
+#theme-toggle{
+padding:8px;
+}
+
+.hero{
+padding-top:140px;
+height:auto;
+min-height:100vh;
+}
+
+.hero-logo{
+width:150px;
+}
+
+.glow-title{
+font-size:50px;
+line-height:1.1;
+}
+
+.hero h2{
+font-size:22px;
+}
+
+.hero p{
+font-size:16px;
+line-height:1.7;
+}
+
+.hero-buttons{
+flex-direction:column;
+width:100%;
+max-width:300px;
+}
+
+.btn{
+width:100%;
+text-align:center;
+}
+
+section{
+padding:80px 6%;
+}
+
+section h2{
+font-size:34px;
+}
+
+#about p{
+font-size:16px;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.card{
+padding:25px;
+}
+
+.portfolio-grid{
+grid-template-columns:1fr;
+}
+
+.portfolio-item img{
+height:220px;
+}
+
+.video-grid{
+grid-template-columns:1fr;
+}
+
+.video-grid iframe{
+height:220px;
+}
+
+.stats-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.stats-grid h3{
+font-size:32px;
+}
+
+footer h3{
+font-size:24px;
+}
+
+.footer-logo{
+width:70px;
+}
+
+}
+
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media screen and (max-width:480px){
+
+.glow-title{
+font-size:38px;
+}
+
+.hero-logo{
+width:120px;
+}
+
+.hero h2{
+font-size:18px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+section h2{
+font-size:28px;
+}
+
+.stats-grid{
+grid-template-columns:1fr;
+}
+
+.card h3{
+font-size:18px;
+}
+
+.card p{
+font-size:14px;
+}
+
+.portfolio-item h3{
+font-size:16px;
+}
+
+footer{
+padding:40px 15px;
+}
+
+footer p{
+font-size:14px;
+}
+
+}
+
+
+/* ==========================
+   LARGE SCREENS
+========================== */
+
+@media screen and (min-width:1400px){
+
+.hero-logo{
+width:260px;
+}
+
+.glow-title{
+font-size:110px;
+}
+
+.hero p{
+font-size:24px;
+}
+
+section{
+padding:140px 12%;
+}
+
+}
+```
