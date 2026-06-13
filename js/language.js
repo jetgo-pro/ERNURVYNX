@@ -1,190 +1,190 @@
-```javascript
-const switcher = document.getElementById("language-switcher");
-
 const translations = {
-  kz: {
-    title: "ERNURVYNX | AI және Технология",
+    kz: {
+        explore: "Зерттеу",
+        contact: "Байланыс",
 
-    heroH2: "🥷 AI және технология",
-    heroP: `💻 Веб-сайттар • Қосымшалар • Ойындар<br>
-🎬 AI Бейнелер • Дизайн<br>
-📚 Үйрен • Жаса • Дамы 🚀`,
+        aboutTitle: "ERNURVYNX туралы",
+        aboutText:
+            "ERNURVYNX сайтына қош келдіңіз. Жасанды интеллект, технология, дизайн, веб-сайттар, қосымшалар және шығармашылық инновацияларға арналған платформа. Мұнда сіз оқулықтар, жобалар, құралдар және заманауи цифрлық шешімдер табасыз. Үйрен. Жаса. Дамы.",
 
-    explore: "Қарау",
-    contactNav: "Байланыс",
+        servicesTitle: "Қызметтер",
 
-    aboutTitle: "ERNURVYNX туралы",
-    aboutText: `ERNURVYNX сайтына қош келдіңіз.<br><br>
-Жасанды интеллект, технология, дизайн, веб-сайттар және цифрлық инновацияларға арналған платформа.<br><br>
-Мұнда заманауи цифрлық шешімдер мен пайдалы ақпарат табасыз.<br><br>
-Үйрен. Жаса. Дамы.`,
+        aiTitle: "🥷 AI және Технология",
+        aiText:
+            "Жасанды интеллект, автоматтандыру және болашақ технологиялары.",
 
-    servicesTitle: "Қызметтер",
+        webTitle: "💻 Веб-сайттар • Қосымшалар • Ойындар",
+        webText:
+            "Веб-сайт жасау, мобильді қосымшалар және ойын жобалары.",
 
-    card1h: "🥷 AI және технология",
-    card1p: "Жасанды интеллект, автоматтандыру және болашақ технологиялары.",
+        designTitle: "🎬 AI Бейнелер • Дизайн",
+        designText:
+            "AI арқылы жасалған видеолар, графика, логотиптер және брендинг.",
 
-    card2h: "💻 Веб-сайттар • Қосымшалар • Ойындар",
-    card2p: "Веб-сайт жасау, мобильді қосымшалар және ойын жобалары.",
+        learnTitle: "📚 Үйрен • Жаса • Дамы",
+        learnText:
+            "Білім беру контенті, оқулықтар және шығармашылық даму.",
 
-    card3h: "🎬 AI Бейнелер • Дизайн",
-    card3p: "AI арқылы жасалған видеолар, графика және логотиптер.",
+        statsTitle: "Статистика",
 
-    card4h: "📚 Үйрен • Жаса • Дамы",
-    card4p: "Оқу материалдары мен шығармашылық даму.",
+        projects: "Жобалар",
+        designs: "Дизайндар",
+        visitors: "Келушілер",
+        support: "Қолдау",
 
-    statsTitle: "Статистика",
+        workTitle: "Бірге жұмыс істейік",
+        workText:
+            "Веб-сайттар, AI шешімдері, дизайн немесе серіктестік қызықтырса, WhatsApp арқылы хабарласыңыз.",
 
-    projects: "Жобалар",
-    designs: "Дизайндар",
-    visitors: "Келушілер",
-    support: "Қолдау",
+        contactBtn: "💬 Байланысу",
 
-    contactTitle: "Бірге Жұмыс Істейік",
-    contactText: "Веб-сайт, AI шешімдері немесе дизайн қажет пе? WhatsApp арқылы хабарласыңыз.",
-    contactBtn: "💬 Байланысу",
+        footerText: "AI • Технология • Шығармашылық",
+        footerGrow: "Үйрен • Жаса • Дамы 🚀"
+    },
 
-    footer1: "AI • Технология • Шығармашылық",
-    footer2: "Үйрен • Жаса • Дамы 🚀"
-  },
+    en: {
+        explore: "Explore",
+        contact: "Contact",
 
-  en: {
-    title: "ERNURVYNX | AI & Technology",
+        aboutTitle: "About ERNURVYNX",
+        aboutText:
+            "Welcome to ERNURVYNX. A platform dedicated to Artificial Intelligence, Technology, Design, Websites, Apps and Creative Innovation. Here you will discover tutorials, projects, tools and modern digital solutions. Learn. Create. Grow.",
 
-    heroH2: "🥷 AI & Technology",
-    heroP: `💻 Websites • Apps • Games<br>
-🎬 AI Videos • Design<br>
-📚 Learn • Create • Grow 🚀`,
+        servicesTitle: "Services",
 
-    explore: "Explore",
-    contactNav: "Contact",
+        aiTitle: "🥷 AI & Technology",
+        aiText:
+            "Artificial Intelligence, automation and future technologies.",
 
-    aboutTitle: "About ERNURVYNX",
-    aboutText: `Welcome to ERNURVYNX.<br><br>
-A platform dedicated to Artificial Intelligence, Technology, Design, Websites and Creative Innovation.<br><br>
-Discover modern digital solutions and useful resources.<br><br>
-Learn. Create. Grow.`,
+        webTitle: "💻 Websites • Apps • Games",
+        webText:
+            "Website development, mobile apps and gaming projects.",
 
-    servicesTitle: "Services",
+        designTitle: "🎬 AI Videos • Design",
+        designText:
+            "AI generated videos, graphics, logos and branding.",
 
-    card1h: "🥷 AI & Technology",
-    card1p: "Artificial Intelligence, automation and future technologies.",
+        learnTitle: "📚 Learn • Create • Grow",
+        learnText:
+            "Educational content, tutorials and creative learning.",
 
-    card2h: "💻 Websites • Apps • Games",
-    card2p: "Website development, mobile apps and gaming projects.",
+        statsTitle: "Statistics",
 
-    card3h: "🎬 AI Videos • Design",
-    card3p: "AI generated videos, graphics and logo creation.",
+        projects: "Projects",
+        designs: "Designs",
+        visitors: "Visitors",
+        support: "Support",
 
-    card4h: "📚 Learn • Create • Grow",
-    card4p: "Educational content and creative learning.",
+        workTitle: "Let's Work Together",
+        workText:
+            "Interested in websites, AI solutions, design or collaboration? Contact me directly on WhatsApp.",
 
-    statsTitle: "Statistics",
+        contactBtn: "💬 Contact Me",
 
-    projects: "Projects",
-    designs: "Designs",
-    visitors: "Visitors",
-    support: "Support",
+        footerText: "AI • Technology • Creativity",
+        footerGrow: "Learn • Create • Grow 🚀"
+    },
 
-    contactTitle: "Let's Work Together",
-    contactText: "Interested in websites, AI solutions or design? Contact me on WhatsApp.",
-    contactBtn: "💬 Contact Me",
+    ru: {
+        explore: "Исследовать",
+        contact: "Связаться",
 
-    footer1: "AI • Technology • Creativity",
-    footer2: "Learn • Create • Grow 🚀"
-  },
+        aboutTitle: "О ERNURVYNX",
+        aboutText:
+            "Добро пожаловать в ERNURVYNX. Платформа, посвященная искусственному интеллекту, технологиям, дизайну, сайтам, приложениям и цифровым инновациям. Здесь вы найдете уроки, проекты, инструменты и современные цифровые решения. Учись. Создавай. Развивайся.",
 
-  ru: {
-    title: "ERNURVYNX | ИИ и технологии",
+        servicesTitle: "Услуги",
 
-    heroH2: "🥷 ИИ и технологии",
-    heroP: `💻 Сайты • Приложения • Игры<br>
-🎬 AI Видео • Дизайн<br>
-📚 Учись • Создавай • Развивайся 🚀`,
+        aiTitle: "🥷 AI и Технологии",
+        aiText:
+            "Искусственный интеллект, автоматизация и технологии будущего.",
 
-    explore: "Обзор",
-    contactNav: "Контакты",
+        webTitle: "💻 Сайты • Приложения • Игры",
+        webText:
+            "Разработка сайтов, мобильных приложений и игровых проектов.",
 
-    aboutTitle: "О ERNURVYNX",
-    aboutText: `Добро пожаловать в ERNURVYNX.<br><br>
-Платформа об искусственном интеллекте, технологиях, дизайне и цифровых инновациях.<br><br>
-Здесь вы найдете современные цифровые решения и полезные материалы.<br><br>
-Учись. Создавай. Развивайся.`,
+        designTitle: "🎬 AI Видео • Дизайн",
+        designText:
+            "Видео, графика, логотипы и брендинг, созданные с помощью AI.",
 
-    servicesTitle: "Услуги",
+        learnTitle: "📚 Учись • Создавай • Развивайся",
+        learnText:
+            "Обучающий контент, уроки и творческое развитие.",
 
-    card1h: "🥷 ИИ и технологии",
-    card1p: "Искусственный интеллект, автоматизация и технологии будущего.",
+        statsTitle: "Статистика",
 
-    card2h: "💻 Сайты • Приложения • Игры",
-    card2p: "Разработка сайтов, мобильных приложений и игровых проектов.",
+        projects: "Проекты",
+        designs: "Дизайны",
+        visitors: "Посетители",
+        support: "Поддержка",
 
-    card3h: "🎬 AI Видео • Дизайн",
-    card3p: "AI видео, графика и создание логотипов.",
+        workTitle: "Давайте работать вместе",
+        workText:
+            "Интересуют сайты, AI-решения, дизайн или сотрудничество? Свяжитесь со мной напрямую через WhatsApp.",
 
-    card4h: "📚 Учись • Создавай • Развивайся",
-    card4p: "Обучающие материалы и творческое развитие.",
+        contactBtn: "💬 Связаться",
 
-    statsTitle: "Статистика",
-
-    projects: "Проекты",
-    designs: "Дизайны",
-    visitors: "Посетители",
-    support: "Поддержка",
-
-    contactTitle: "Давайте Работать Вместе",
-    contactText: "Нужен сайт, AI решение или дизайн? Свяжитесь через WhatsApp.",
-    contactBtn: "💬 Связаться",
-
-    footer1: "ИИ • Технологии • Креативность",
-    footer2: "Учись • Создавай • Развивайся 🚀"
-  }
+        footerText: "AI • Технологии • Креативность",
+        footerGrow: "Учись • Создавай • Развивайся 🚀"
+    }
 };
 
-switcher.addEventListener("change", () => {
-  const lang = translations[switcher.value];
+const languageSwitcher = document.getElementById("language-switcher");
 
-  document.title = lang.title;
+languageSwitcher.addEventListener("change", () => {
+    const lang = languageSwitcher.value;
+    const t = translations[lang];
 
-  document.querySelector(".hero h2").innerHTML = lang.heroH2;
-  document.querySelector(".hero p").innerHTML = lang.heroP;
+    // Hero buttons
+    document.querySelectorAll(".hero-buttons .btn")[0].textContent = t.explore;
+    document.querySelectorAll(".hero-buttons .btn")[1].textContent = t.contact;
 
-  document.querySelectorAll(".hero-buttons .btn")[0].innerHTML = lang.explore;
-  document.querySelectorAll(".hero-buttons .btn")[1].innerHTML = lang.contactNav;
+    // About
+    document.querySelector("#about h2").textContent = t.aboutTitle;
+    document.querySelector("#about p").textContent = t.aboutText;
 
-  document.querySelector("#about h2").innerHTML = lang.aboutTitle;
-  document.querySelector("#about p").innerHTML = lang.aboutText;
+    // Services
+    document.querySelector("#services h2").textContent = t.servicesTitle;
 
-  document.querySelector("#services h2").innerHTML = lang.servicesTitle;
+    const cards = document.querySelectorAll(".card");
 
-  const cards = document.querySelectorAll(".card");
+    cards[0].querySelector("h3").textContent = t.aiTitle;
+    cards[0].querySelector("p").textContent = t.aiText;
 
-  cards[0].querySelector("h3").innerHTML = lang.card1h;
-  cards[0].querySelector("p").innerHTML = lang.card1p;
+    cards[1].querySelector("h3").textContent = t.webTitle;
+    cards[1].querySelector("p").textContent = t.webText;
 
-  cards[1].querySelector("h3").innerHTML = lang.card2h;
-  cards[1].querySelector("p").innerHTML = lang.card2p;
+    cards[2].querySelector("h3").textContent = t.designTitle;
+    cards[2].querySelector("p").textContent = t.designText;
 
-  cards[2].querySelector("h3").innerHTML = lang.card3h;
-  cards[2].querySelector("p").innerHTML = lang.card3p;
+    cards[3].querySelector("h3").textContent = t.learnTitle;
+    cards[3].querySelector("p").textContent = t.learnText;
 
-  cards[3].querySelector("h3").innerHTML = lang.card4h;
-  cards[3].querySelector("p").innerHTML = lang.card4p;
+    // Stats
+    document.querySelector("#stats h2").textContent = t.statsTitle;
 
-  document.querySelector("#stats h2").innerHTML = lang.statsTitle;
+    const stats = document.querySelectorAll("#stats .stats-grid p");
 
-  const stats = document.querySelectorAll("#stats p");
+    stats[0].textContent = t.projects;
+    stats[1].textContent = t.designs;
+    stats[2].textContent = t.visitors;
+    stats[3].textContent = t.support;
 
-  stats[0].innerHTML = lang.projects;
-  stats[1].innerHTML = lang.designs;
-  stats[2].innerHTML = lang.visitors;
-  stats[3].innerHTML = lang.support;
+    // Contact
+    document.querySelector("#contact h2").textContent = t.workTitle;
+    document.querySelector("#contact p").textContent = t.workText;
+    document.querySelector("#contact .btn").textContent = t.contactBtn;
 
-  document.querySelector("#contact h2").innerHTML = lang.contactTitle;
-  document.querySelector("#contact p").innerHTML = lang.contactText;
-  document.querySelector("#contact .btn").innerHTML = lang.contactBtn;
+    // Footer
+    document.querySelectorAll("footer p")[0].textContent = t.footerText;
+    document.querySelectorAll("footer p")[1].textContent = t.footerGrow;
 
-  document.querySelectorAll("footer p")[0].innerHTML = lang.footer1;
-  document.querySelectorAll("footer p")[1].innerHTML = lang.footer2;
+    localStorage.setItem("language", lang);
 });
-```
+
+// Save selected language
+window.addEventListener("load", () => {
+    const savedLang = localStorage.getItem("language") || "kz";
+    languageSwitcher.value = savedLang;
+    languageSwitcher.dispatchEvent(new Event("change"));
+});
